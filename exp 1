@@ -1,0 +1,42 @@
+import java.util.*; 
+
+class Factorial { 
+    public static void main(String args[]) { 
+        int i,no; 
+        long fact=1; // 'fact' is declared as 'long' to handle larger factorial values
+        Scanner sc=new Scanner(System.in); // Creates a Scanner object to read user input
+
+        System.out.println("Enter no:"); // Prompts the user to enter a number
+        no=sc.nextInt(); // Reads the integer input from the user
+
+        // Loop to calculate the factorial
+        for(i=1;i<=no;i++) { 
+            fact=fact*i; // Multiplies 'fact' by the current loop counter 'i'
+        } 
+
+        System.out.println("Factorial of no="+fact); // Prints the calculated factorial
+    } 
+}
+//50 prime numbers
+import java.util.*; 
+
+class ExPrime { 
+    public static void main(String args[]) { 
+        int factorCount; // Renamed 'factor' to 'factorCount' for clarity
+        
+        for (int i = 1; i <= 50; i++) { 
+            factorCount = 0; // Initialize factorCount for each new number 'i'
+            
+            for (int j = 1; j <= i; j++) { 
+                if (i % j == 0) {
+                    factorCount++; // Increment factorCount when a divisor is found
+                }
+            } 
+            
+            // Corrected 'of' to 'if' and added curly braces for the if block
+            if (factorCount == 2) { 
+                System.out.println(i); 
+            } 
+        } 
+    } 
+}
