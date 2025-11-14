@@ -1,0 +1,33 @@
+import java.util.*;
+class Player{
+Player(){
+System.out.println(&quot;Welcome to ground&quot;);
+}
+}
+
+class Cricket_Player extends Player{
+Cricket_Player(){
+System.out.println(&quot;You selected Cricket&quot;);
+}
+}
+
+class Football_Player extends Player{
+Football_Player(){
+System.out.println(&quot;You selected Football&quot;);
+}
+}
+
+class Hockey_Player extends Player{
+Hockey_Player(){
+System.out.println(&quot;You selected Hockey&quot;);
+}
+}
+class Inherit{
+public static void main(String args[]){
+
+Player obj1= new Player();
+Cricket_Player obj2 = new Cricket_Player();
+Football_Player obj3 = new Football_Player();
+Hockey_Player obj4 = new Hockey_Player();
+}
+}
