@@ -1,0 +1,34 @@
+import java.util.*;
+class A1
+{
+A1(){
+System.out.println(&quot;constructor without argument&quot;);
+}
+A1(int a){
+System.out.println(&quot;constructor with argument&quot;);
+}
+
+public static void main(String args[]){
+A1 obj1 = new A1();
+A1 obj2 = new A1(20);
+}
+}
+
+import java.util.*;
+public class AA1{
+void add(){
+int a=15,b=30;
+int c=a+b;
+
+System.out.println(&quot;Sum=&quot;+c);
+}
+void add(int x, int y){
+int z=x+y;
+System.out.println(&quot;Sum=&quot;+z);
+}
+public static void main(String args[]){
+AA1 obj = new AA1();
+obj.add();
+obj.add(30,50);
+}
+}
