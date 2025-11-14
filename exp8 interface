@@ -1,0 +1,66 @@
+
+interface A
+{
+void Adisplay();
+}
+class AB implements A
+{
+public void Adisplay()
+{
+System.out.println(&quot;A display&quot;);
+}
+}
+public class InterfaceDemo{
+public static void main(String[]args){
+AB obj=new AB();
+obj.Adisplay();
+}
+}
+
+
+
+interface printable
+
+{
+void print();
+}
+class A6 implements printable
+{
+public void print()
+{
+System.out.print(&quot;Hello&quot;);
+}
+public static Void main(String[]args)
+{
+A6 obj=new A6();
+obj.print();
+}
+}
+
+
+interface Printable
+{
+void print();
+}
+interface Showable
+{
+void show();
+}
+class A7 implements Printable,Showable
+{
+
+public void print()
+{
+System.out.println(&quot;Hello&quot;);
+}
+public void show()
+{
+System.out.println(&quot;Welcome&quot;);
+}
+public static void main(String []args){
+A7 obj=new A7();
+obj.print();
+obj.show();
+}
+
+}
