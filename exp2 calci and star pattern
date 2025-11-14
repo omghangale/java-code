@@ -1,0 +1,62 @@
+import java.util.*;
+class Star_patt
+{
+public static void main(String args[])
+{
+int i,j;
+for(i=1;i<=5;i++)
+{
+for(int s=1;s<=5-i;s++)
+{
+System.out.print(" ");
+
+}
+for(j=1;j<=2*i-1;j++)
+{
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}
+
+import java.util.*;
+public class Calci
+{
+public static void main(String args[])
+{
+char operator;
+int no1,no2,ans;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter values of no1 and no2:");
+no1=sc.nextInt();
+no2=sc.nextInt();
+System.out.println("choose an operator:+,-,*,/");
+
+operator=sc.next().charAt(0);
+
+switch(operator)
+{
+case'+':
+ans=no1+no2;
+System.out.println("result of addn:"+ans);
+break;
+case'-':
+ans=no1-no2;
+System.out.println("result of sub:"+ans);
+break;
+case'*':
+ans=no1*no2;
+System.out.println("result of mul:"+ans);
+break;
+case'/':
+ans=no1/no2;
+System.out.println("result of div:"+ans);
+
+break;
+default:
+System.out.println("invalid operator");
+}
+
+}
+}
