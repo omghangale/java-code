@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+public class Rectangle{
+double width, length, area;
+String colour;
+Scanner sc=new Scanner (System.in);
+Rectangle()
+{
+System.out.print(&quot;Enter the Length:&quot;);
+
+length = sc.nextDouble();
+System.out.print(&quot;Enter the Width:&quot;);
+width=sc.nextDouble();
+System.out.print(&quot;Enter the Colour: &quot;);
+colour=sc.next();
+area = length*width;
+System.out.println(&quot;Area of Rectangle: &quot;+area);
+}
+
+public static void main(String[]args)
+
+{
+System.out.println(&quot;First Rectangle:&quot;);
+Rectangle r1=new Rectangle();
+System.out.println(&quot;Second Rectangle:&quot;);
+
+Rectangle r2=new Rectangle();
+if(r1.area==r2.area &amp;&amp; r1.colour.equals(r2.colour))
+System.out.println(&quot;Matching Rectangle:&quot;);
+else
+System.out.println(&quot;Not Matching Rectangle&quot;);
+
+}
+}
