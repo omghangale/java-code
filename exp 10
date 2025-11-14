@@ -1,0 +1,15 @@
+import java.awt.*;
+import java.applet.Applet;
+
+public class NewApplet extends Applet{
+public void paint(Graphics g){
+g.drawOval(10,10,50,100);
+g.drawString(&quot;Oval&quot;,25,130);
+g.drawRect(70,70,70,70);
+g.drawString(&quot;Rectangle&quot;,80,160);
+g.drawLine(70,30,200,30);
+g.drawString(&quot;line&quot;,120,50);
+g.drawString(&quot;it is demo of various graphics objects&quot;,40,200);
+
+}
+}
