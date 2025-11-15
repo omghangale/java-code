@@ -21,20 +21,24 @@ class Factorial {
 import java.util.*; 
 
 class ExPrime { 
-    public static void main(String args[]) { 
-        int factorCount; // Renamed 'factor' to 'factorCount' for clarity
+    public static void main(String args[])
+ { 
+        int factorCount; 
         
-        for (int i = 1; i <= 50; i++) { 
-            factorCount = 0; // Initialize factorCount for each new number 'i'
-            
-            for (int j = 1; j <= i; j++) { 
-                if (i % j == 0) {
-                    factorCount++; // Increment factorCount when a divisor is found
+        for (int i = 1; i <= 50; i++) 
+     { 
+            factorCount = 0; 
+            for (int j = 1; j <= i; j++)
+            { 
+                if (i % j == 0)
+                {
+                    factorCount++; 
                 }
-            } 
+      } 
             
-            // Corrected 'of' to 'if' and added curly braces for the if block
-            if (factorCount == 2) { 
+            
+            if (factorCount == 2) 
+            { 
                 System.out.println(i); 
             } 
         } 
